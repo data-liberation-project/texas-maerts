@@ -75,12 +75,12 @@ EX:`RN111577540_170526_12-8-2023_1712015282.pdf`
 
 MAERT are extracted via the following schema.
 
-The [PDF Plumber iPython Notebook](/texas-maerts/blob/main/table_extraction/pdf_plumber.ipynb) is used to extract tables from the pdfs.
+The [PDF Plumber iPython Notebook](/table_extraction/pdf_plumber.ipynb) is used to extract tables from the pdfs.
 
 Using two strategies
 
 - extract_table()
-- custom formatter at [tricky_tables.py](texas_air/table_extraction/tricky_tables.py)
+- custom formatter at [tricky_tables.py](/table_extraction/tricky_tables.py)
 
 The final file lives at `data/final.csv`
 
