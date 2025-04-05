@@ -73,7 +73,7 @@ We have provided three resources:
 
 ## Caveats and Limitations
 
-MAERTs across air permit PDFs lack consistent, clean formatting. MAERTs are classified into three categories: easy tables, tricky tables, and unknown tables, and the scripts use different methods to parse each.
+MAERTs across air permit PDFs lack consistent, clean formatting. Air permit MAERTs are split between three categories: easy tables, tricky tables, and unknown tables, and the scripts use different methods to parse each.
 
 Friendlier PDF formats with improved MAERTs (easy tables) appeared in 1992 and gained wider adoption in the early 2010s, but still do not comprise all MAERTs.
 
