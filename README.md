@@ -36,17 +36,17 @@ We have provided three resources:
     - This file is the output of the MAERT extraction process, compressed due to Github’s [large file storage limitations](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github). It contains all MAERTs for the scraped RNs, standardized into a single, large table.
 
 ## Data Dictionary 
- All definitions were sourced from [TCEQ’s guidance page](https://www.tceq.texas.gov/permitting/central_registry/guidance.html) regarding Central Registry (see “TCEQ Core Data Form Instructions” document). 
+ All definitions were sourced from [TCEQ’s guidance page](https://www.tceq.texas.gov/permitting/central_registry/guidance.html) (see “TCEQ Core Data Form Instructions” document). 
 
 
 ### `data/combined_entities.csv`
 
 | column name             | description                                                                                                                                                                                                                                                      |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `rn_number`             | Each site location is issued a unique 11-digit identification number called an RN (e.g., RN123456789).                                                                                                                                                           |
-| `regulated_entity_name` | Regulated Entity – A “Regulated Entity” is a person, organization, place, or thing that is of environmental interest to TCEQ where regulatory activities of interest to the Agency occur or have occurred in the past. Examples are a site, facility or license. |
+| `rn_number`             | Each site location is issued a unique 11-digit identification number called an RN (e.g. RN123456789).                                                                                                                                                           |
+| `regulated_entity_name` | A “Regulated Entity” is a person, organization, place, or thing that is of environmental interest to TCEQ where regulatory activities of interest to the Agency occur or have occurred in the past. Examples are a site, facility or license. |
 | `county`                | The county where the Regulated Entity is located. If there is more than one county, provide the primary county in which the majority of the Regulated Entity is located.                                                                                         |
-| `location`              | Address of the Regulated Entity or if the physical location has no street address, then specific directions to reach theRegulated Entity                                                                                                                         |
+| `location`              | Address of the Regulated Entity or if the physical location has no street address, then specific directions to reach the Regulated Entity                                                                                                                         |
 
 ### `data/MAERT_lookup.csv`
 
@@ -54,8 +54,8 @@ We have provided three resources:
 | ------------------------ | ------------------------------------------------------------------------------------------------------ |
 | `rn_number`              | Each site location is issued a unique 11-digit identification number called an RN (e.g., RN123456789). |
 | `permit_number`          | Permit Number of MAERT                                                                                 |
-| `publish_date`           | Publish Date as listed on the Document Portal M-D-YYYY                                                 |
-| `relative_file_location` | location of named MAERT PDF relative to repo                                                           |
+| `publish_date`           | Publish Date as listed in the Document Portal M-D-YYYY                                                 |
+| `relative_file_location` | Location of named MAERT PDF relative to repository                                                           |
 
 ### `data/final.csv.zip`
 
@@ -63,19 +63,21 @@ We have provided three resources:
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Emission Source | Either specific equipment designation or emission point number (EPN) from plot plan. |
 | Source Name | Specific point source name |
-| Air Contaminant Name | An example of possible values. Specific values can be found in the corresponding MAERT. <ul> <li> CO - carbon monoxide </li> <li> NO<sub>x</sub> - total oxides of nitrogen </li> <li> PM<sub>10</sub> - particulate matter equal to or less than 10 microns in diameter. Where particulate matter is not listed, it shall be assumed that no particulate matter greater than 10 microns in emitted. </li> <li> SO2 - sulfur dioxide </li> <li> VOC - volatile organic compounds as defined in Title 30 Texas Administrative Code § 101. </li> <li> CO - carbon monoxide </li> <li> CO - carbon monoxide </li> </ul> |
+| Air Contaminant Name | Below is an example of possible values. Specific values will vary. <ul> <li> CO - carbon monoxide </li> <li> NO<sub>x</sub> - total oxides of nitrogen </li> <li> PM<sub>10</sub> - particulate matter equal to or less than 10 microns in diameter. Where particulate matter is not listed, it shall be assumed that no particulate matter greater than 10 microns in emitted. </li> <li> SO2 - sulfur dioxide </li> <li> VOC - volatile organic compounds as defined in Title 30 Texas Administrative Code § 101. </li> <li> CO - carbon monoxide </li> <li> CO - carbon monoxide </li> </ul> |
 | Emission Rate lbs/hr | The allowable emission rates listed for individual source in lbs/hr |
 | Emission Rate tons/year | The allowable emission rates listed for individual source in tons/year |
-| rn_number | Each site location is issued a unique 11-digit identification number called an RN (e.g., RN123456789). |
+| rn_number | Each site location is issued a unique 11-digit identification number called an RN (e.g. RN123456789). |
 | permit_number | Permit Number of MAERT |
 | publish_date | Publish Date as listed on the Document Portal M-D-YYYY |
-| file_location | location of named MAERT PDF relative to repo |
+| file_location | Location of named MAERT PDF relative to repository |
 
 ## Caveats and Limitations
 
-- MAERTs across air permit PDFs lack consistent, clean formatting. While friendlier PDF formats with improved MAERTs appeared in 1992 and gained wider adoption in the early 2010s, they still don’t cover all MAERTs.
-- MAERTs were classified into three categories: easy tables, tricky tables, and unknown tables.
-- Despite this, extraction strategies were generally successful across reports.
+MAERTs across air permit PDFs lack consistent, clean formatting. MAERTs are classified into three categories: easy tables, tricky tables, and unknown tables, and the scripts use different methods to parse each.
+
+Friendlier PDF formats with improved MAERTs (easy tables) appeared in 1992 and gained wider adoption in the early 2010s, but still do not comprise all MAERTs.
+
+ Despite this, extraction strategies were generally successful across reports.
 ![Sample Table](assets/doc.png)
 
 ## Running the Code Yourself
