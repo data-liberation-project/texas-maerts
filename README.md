@@ -21,8 +21,8 @@ The TCEQ stores air permit PDFs in an online database that requires specific fil
 Our process is as follows:
 
 1. Compile a list of Regulated Entity Names and RNs by searching [TCEQ’s Regulated Entity Search](https://www15.tceq.texas.gov/crpub/index.cfm?fuseaction=regent.RNSearch) database, using all of Texas’ counties and zip codes as search criteria. 
-2. For each RN, scrape the TCEQ’s document portal for “new source review permit” PDFs
-3. Extract the MAERT from the PDFs as standardized, structured data
+2. For each RN, scrape the TCEQ’s document portal for “new source review permit” PDFs.
+3. Extract the MAERT from the PDFs as standardized, structured data.
 
 ### What data are you providing?
 
