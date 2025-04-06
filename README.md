@@ -34,6 +34,20 @@ We have provided three resources:
     - This file is a lookup table for all scraped MAERTs in data/MAERT. Note: A Regulated Entity may have multiple MAERTs (e.g., a business or individual may apply for air permits multiple times), and a RN may have multiple MAERTs (e.g., a site could have several associated air permits).
 - data/final.csv.zip
     - This file is the output of the MAERT extraction process, compressed due to Github’s [large file storage limitations](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github). It contains all MAERTs for the scraped RNs, standardized into a single, large table.
+ 
+### What potential uses are there for this data? 
+These datasets can help answer important questions about air pollution, regulation, and environmental impacts in Texas. These are a few ideas for how it might be used. If you end up working with this data, the Data Liberation Project would love to hear from you!
+
+**Environmental Justice & Public Health**
+Who is most exposed to pollution — and where?
+- Map permitted emission limits alongside demographic data (like race, income, or health outcomes).
+- Identify neighborhoods with especially high concentrations of permitted pollution.
+
+**Corporate Accountability**
+Who’s polluting the most and how has that changed over time?
+- Rank companies or industries by total permitted emissions.
+- Track changes over time for specific companies or facilities.
+- Link facilities with high MAERTs to environmental violations, fines, or lawsuits.
 
 ## Data Dictionary 
  All definitions were sourced from [TCEQ’s guidance page](https://www.tceq.texas.gov/permitting/central_registry/guidance.html) (see “TCEQ Core Data Form Instructions” document). 
