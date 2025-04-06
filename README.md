@@ -38,13 +38,11 @@ We have provided three resources:
 ### What potential uses are there for this data? 
 These datasets can help answer important questions about air pollution, regulation, and environmental impacts in Texas. These are a few ideas for how it might be used. If you end up working with this data, the Data Liberation Project would love to hear from you!
 
-**Environmental Justice & Public Health**
-Who is most exposed to pollution — and where?
+**Environmental Justice & Public Health**: Who is most exposed to pollution — and where?
 - Map permitted emission limits alongside demographic data (like race, income, or health outcomes).
 - Identify neighborhoods with especially high concentrations of permitted pollution.
 
-**Corporate Accountability**
-Who’s polluting the most and how has that changed over time?
+**Corporate Accountability**: Who’s polluting the most and how has that changed over time?
 - Rank companies or industries by total permitted emissions.
 - Track changes over time for specific companies or facilities.
 - Link facilities with high MAERTs to environmental violations, fines, or lawsuits.
